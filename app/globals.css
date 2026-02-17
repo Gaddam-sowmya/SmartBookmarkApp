@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Custom reusable classes (no @apply) */
+
+:root {
+  --bg-dark: #0f172a;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: white;
+}

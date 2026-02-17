@@ -12,13 +12,18 @@ export default function Navbar({ email }: { email: string }) {
   };
 
   return (
-    <div className="flex justify-between items-center p-4 bg-white shadow-md rounded-xl">
-      <h2 className="font-bold text-xl">Dashboard</h2>
-      <div className="flex gap-4 items-center">
-        <span className="text-gray-600">{email}</span>
+    <div className="glass p-4 rounded-2xl flex justify-between items-center mb-8">
+      <h2 className="text-xl font-semibold gradient-text">
+        Dashboard
+      </h2>
+  
+      <div className="flex items-center gap-4">
+        <span className="text-gray-300 text-sm">{email}</span>
+  
         <button
           onClick={logout}
-          className="bg-red-500 text-white px-4 py-2 rounded-lg"
+          className="bg-red-500/20 hover:bg-red-500/40 text-red-400 
+          px-4 py-2 rounded-xl transition"
         >
           Logout
         </button>
